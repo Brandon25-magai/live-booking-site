@@ -301,6 +301,11 @@ summary {
   color: var(--muted);
 }
 
+
+.hidden-field {
+  display: none;
+}
+
 .contact-form {
   border: 1px solid #494955;
   border-radius: 0.8rem;
