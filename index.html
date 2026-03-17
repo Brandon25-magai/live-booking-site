@@ -181,14 +181,15 @@
             <p>For immediate help, call or text now. For non-urgent jobs, use this form.</p>
             <p class="contact-line"><strong>Phone/Text:</strong> <a href="tel:+18153100817">(815) 310-0817</a></p>
             <p class="contact-line"><strong>Email:</strong> <a href="mailto:Brandon@satosalltradesolutions.com">Brandon@satosalltradesolutions.com</a></p>
-            <p class="small-note">Form submissions are routed to Brandon@satosalltradesolutions.com.</p>
+            <p class="small-note">Request submissions are sent to Brandon@satosalltradesolutions.com.</p>
           </div>
 
-          <form class="contact-form" action="https://formsubmit.co/Brandon@satosalltradesolutions.com" method="post">
-            <input type="hidden" name="_subject" value="New satos all trade solutions llc Service Request" />
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_template" value="table" />
-            <input type="hidden" name="_next" value="https://satosalltradesolutions.com/thank-you.html" />
+          <form class="contact-form" name="service-request" method="post" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="service-request" />
+            <input type="hidden" name="subject" value="New satos all trade solutions llc Service Request" />
+            <p class="hidden-field" aria-hidden="true">
+              <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+            </p>
 
             <label for="name">Name</label>
             <input id="name" name="Name" autocomplete="name" required />
@@ -235,9 +236,3 @@
     </script>
   </body>
 </html>
-robots.txt
-robots.txt
-New
-+4
--0
-
