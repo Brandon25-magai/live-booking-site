@@ -486,6 +486,20 @@ transform:scale(1.05);
 .offer-kicker {
   margin-bottom: 0.5rem;
 }
+.main-nav {
+display:flex;
+gap:1rem;
+font-weight:600;
+}
+
+.main-nav a {
+text-decoration:none;
+color:var(--text);
+}
+
+.main-nav a:hover {
+color:var(--accent);
+}
 
 .offer-list li strong {
   color: #ffc34d;
