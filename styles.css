@@ -504,3 +504,50 @@ color:var(--accent);
 .offer-list li strong {
   color: #ffc34d;
 }
+
+.logo-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.logo-subtext {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.main-nav {
+  display: flex;
+  gap: 1.1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.main-nav a:hover {
+  color: var(--accent);
+}
+
+#services-preview p {
+  max-width: 70ch;
+  color: var(--muted);
+}
+
+@media (max-width: 960px) {
+  .main-nav {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .logo-block {
+    align-items: flex-start;
+  }
+}
