@@ -106,6 +106,14 @@ a {
   border-bottom: 1px solid #3a2f1d;
 }
 
+.headline-sub {
+  margin: 0 0 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #ffc34d;
+  font-size: 0.95rem;
+}
+
 .hero::before {
   content: "";
   position: absolute;
