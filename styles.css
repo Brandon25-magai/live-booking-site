@@ -350,8 +350,9 @@ label {
 }
 
 input,
-textarea {
-   width: 100%;
+textarea,
+select {
+  width: 100%;
   border: 1px solid #505061;
   border-radius: 0.56rem;
   background: #0f0f13;
@@ -360,7 +361,6 @@ textarea {
   font: inherit;
   margin-bottom: 0.52rem;
 }
-
 .btn {
   display: inline-block;
   border: 0;
