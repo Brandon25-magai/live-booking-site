@@ -1,20 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact | Sato's All Trade Solutions LLC</title>
   <meta
     name="description"
-    content="Request mobile truck, trailer, and equipment repair from Sato's All Trade Solutions LLC in Lena, IL and surrounding areas."
-  >
-  <link rel="stylesheet" href="styles.css">
+    content="Request mobile truck, trailer, and equipment repair from Sato's All Trade Solutions LLC. Call or submit a service request online."
+  />
+  <link rel="canonical" href="https://satosalltradesolutions.com/contact.html" />
+  <link rel="icon" type="image/svg+xml" href="/assets/SATOS-LOGO-webvector-SVG_01.svg" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a href="index.html" class="brand">
-        <img src="assets/satos-logo.svg" alt="Sato's All Trade Solutions LLC logo">
+
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container topbar">
+
+      <a class="logo" href="index.html">
+        <img src="assets/SATOS-LOGO-webvector-SVG_01.svg"
+             alt="Sato's All Trade Solutions LLC logo"
+             class="logo-image" />
+        <div class="logo-block">
+          <span class="logo-text">Sato's All Trade Solutions LLC</span>
+          <span class="logo-subtext">24/7 Mobile Truck & Equipment Repair</span>
+        </div>
       </a>
 
       <nav class="main-nav" aria-label="Main navigation">
@@ -23,16 +35,23 @@
         <a href="contact.html">Contact</a>
       </nav>
 
-      <a class="call-pill" href="tel:+18153100817">24/7 Call / Text: (815) 310-0817</a>
+      <a class="call-pill" href="tel:+18153100817">
+        24/7 Call / Text: (815) 310-0817
+      </a>
+
     </div>
   </header>
 
-  <main>
+  <main id="main-content" class="container">
     <section class="section-block contact-wrap">
-      <div class="container contact-grid">
+      <div class="contact-grid">
+
         <div>
-          <h1>Request Service</h1>
-          <p>For immediate help, call or text now. For non-urgent jobs, use this form.</p>
+          <p class="eyebrow"><strong>REQUEST MOBILE SERVICE</strong></p>
+          <h1>Contact Sato's All Trade Solutions LLC</h1>
+          <p class="lead">
+            For immediate help, call or text now. For non-urgent jobs, use the service request form below.
+          </p>
 
           <p><strong>Phone/Text:</strong>
             <a href="tel:+18153100817">(815) 310-0817</a>
@@ -42,6 +61,11 @@
             <a href="mailto:Brandon@satosalltradesolutions.com">
               Brandon@satosalltradesolutions.com
             </a>
+          </p>
+
+          <p>
+            Serving Lena, Freeport, Rockford, Monroe, Janesville, Beloit,
+            Stockton, Galena, and surrounding areas in Northern Illinois and Southern Wisconsin.
           </p>
         </div>
 
@@ -53,20 +77,20 @@
           data-netlify="true"
           netlify-honeypot="bot-field"
         >
-          <input type="hidden" name="form-name" value="service-request">
+          <input type="hidden" name="form-name" value="service-request" />
 
           <p class="hidden-field" hidden>
-            <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+            <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
           </p>
 
           <label for="name">Name</label>
-          <input id="name" name="name" required>
+          <input id="name" name="name" required />
 
           <label for="phone">Phone</label>
-          <input id="phone" name="phone" type="tel" required>
+          <input id="phone" name="phone" type="tel" required />
 
           <label for="equipment_type">Truck or Equipment Type</label>
-          <input id="equipment_type" name="equipment_type" required>
+          <input id="equipment_type" name="equipment_type" required />
 
           <label for="truck_status">Is the truck or equipment still running?</label>
           <select id="truck_status" name="truck_status" required>
@@ -77,7 +101,7 @@
           </select>
 
           <label for="current_location">Current Location</label>
-          <input id="current_location" name="current_location" required>
+          <input id="current_location" name="current_location" required />
 
           <label for="issue_summary">Issue Summary</label>
           <textarea id="issue_summary" name="issue_summary" rows="4" required></textarea>
@@ -86,8 +110,23 @@
             Send Service Request
           </button>
         </form>
+
       </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© <span id="year"></span> Sato's All Trade Solutions LLC</p>
+      <p>24/7 Mobile Mechanic | Southern WI & Northern IL</p>
+    </div>
+  </footer>
+
+  <a href="tel:+18153100817" class="floating-call">📞 Call Now</a>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
 </body>
 </html>
