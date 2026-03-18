@@ -15,15 +15,15 @@
       content="Complete truck repair, diesel diagnostics, trailer repair, inspections, and mobile welding. Call or text 815-310-0817."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://satosalltradesolutions.com/assets/satos-logo.jpg" />
+    <meta property="og:image" content="https://satosalltradesolutions.com/assets/SATOS-LOGO-webvector-SVG_01.svg" />
     <meta name="robots" content="index,follow" />
     <meta property="og:url" content="https://satosalltradesolutions.com" />
     <link rel="canonical" href="https://satosalltradesolutions.com" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="satos all trade solutions llc | 24/7 Mobile Mechanic" />
     <meta name="twitter:description" content="24/7 mobile mechanic serving Southern WI and Northern IL. Call or text 815-310-0817." />
-    <meta name="twitter:image" content="https://satosalltradesolutions.com/assets/satos-logo.jpg" />
-    <link rel="icon" type="image/jpeg" href="/assets/satos-logo.jpg" />
+    <meta name="twitter:image" content="https://satosalltradesolutions.com/assets/SATOS-LOGO-webvector-SVG_01.svg" />
+    <link rel="icon" type="image/svg+xml" href="/assets/SATOS-LOGO-webvector-SVG_01.svg" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -32,7 +32,7 @@
     <header class="site-header" id="top">
       <div class="container topbar">
         <a class="logo" href="#top" aria-label="satos all trade solutions llc home">
-          <img src="assets/satos-logo.jpg" alt="satos all trade solutions llc logo" class="logo-image" />
+          <img src="assets/SATOS-LOGO-webvector-SVG_01.svg" alt="satos all trade solutions llc logo" class="logo-image" />
           <span class="logo-text">satos all trade solutions llc</span>
         </a>
 
@@ -183,24 +183,32 @@
             <p class="small-note">Request submissions are sent to Brandon@satosalltradesolutions.com.</p>
           </div>
 
-          <form id="service-request-form" class="contact-form" name="service-request" method="POST" action="/" netlify data-netlify="true" netlify-honeypot="bot-field" data-netlify-honeypot="bot-field">
+          <form
+            id="service-request-form"
+            class="contact-form"
+            name="service-request"
+            method="POST"
+            action="/thank-you.html"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+          >
             <input type="hidden" name="form-name" value="service-request" />
-            <input type="hidden" name="subject" value="New satos all trade solutions llc Service Request" />
-            <p class="hidden-field" aria-hidden="true">
+
+            <p class="hidden-field" hidden>
               <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
             </p>
 
             <label for="name">Name</label>
-            <input id="name" name="Name" autocomplete="name" required />
+            <input id="name" name="name" type="text" autocomplete="name" required />
 
             <label for="phone">Phone</label>
-            <input id="phone" name="Phone" type="tel" autocomplete="tel" required />
+            <input id="phone" name="phone" type="tel" autocomplete="tel" required />
 
             <label for="equipment-type">Truck or Equipment Type</label>
-            <input id="equipment-type" name="equipment_type" placeholder="e.g., Freightliner Cascadia" required />
+            <input id="equipment-type" name="equipment_type" type="text" placeholder="e.g., Freightliner Cascadia" required />
 
             <label for="location">Current Location</label>
-            <input id="location" name="current_location" placeholder="Address, city, or nearest landmark" required />
+            <input id="location" name="current_location" type="text" placeholder="Address, city, or nearest landmark" required />
 
             <label for="issue">Issue Summary</label>
             <textarea id="issue" name="issue_summary" rows="4" placeholder="Describe the issue and urgency" required></textarea>
@@ -218,8 +226,6 @@
         <p>24/7 Mobile Mechanic | Southern WI & Northern IL</p>
       </div>
     </footer>
-
-    
 
     <script type="application/ld+json">
       {
@@ -239,31 +245,8 @@
       const serviceForm = document.getElementById('service-request-form');
       const formStatus = document.getElementById('form-status');
 
-      function encodeForm(data) {
-        return new URLSearchParams(data).toString();
-      }
-
-      serviceForm?.addEventListener('submit', async (event) => {
-        event.preventDefault();
+      serviceForm?.addEventListener('submit', () => {
         formStatus.textContent = 'Sending your request...';
-
-        const formData = new FormData(serviceForm);
-
-        try {
-          const response = await fetch('/', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: encodeForm(formData)
-          });
-
-          if (!response.ok) {
-            throw new Error('Submission failed');
-          }
-
-          window.location.href = '/thank-you.html';
-        } catch (error) {
-          formStatus.textContent = 'Submission failed. Call or text (815) 310-0817 for immediate service.';
-        }
       });
     </script>
   </body>
