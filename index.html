@@ -207,6 +207,14 @@
             <label for="equipment-type">Truck or Equipment Type</label>
             <input id="equipment-type" name="equipment_type" type="text" placeholder="e.g., Freightliner Cascadia" required />
 
+            <label for="truck-status">Is the truck or equipment still running?</label>
+<select id="truck-status" name="truck_status" required>
+  <option value="">Select one</option>
+  <option value="running">Yes, still running</option>
+  <option value="not-running">No, not running</option>
+  <option value="derated">Running but derated</option>
+</select>
+            
             <label for="location">Current Location</label>
             <input id="location" name="current_location" type="text" placeholder="Address, city, or nearest landmark" required />
 
