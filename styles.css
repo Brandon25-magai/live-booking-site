@@ -221,18 +221,18 @@ h1 {
 }
 
 .section-block.alt {
-   224	  background: var(--panel-alt);
-   225	}
-   226	
-   227	#service-area {
-   228	  border: none;
-   229	}
-   230	
-   231	.card-grid {
-   232	  display: grid;
-   233	  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-   234	  gap: 0.9rem;
-   235	}
+  	  background: var(--panel-alt);
+}
+   
+  	#service-area {
+     border: none;
+   	}
+   	
+   	.card-grid {
+   	  display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+   	  gap: 0.9rem;
+   	}
 
 .card-grid article {
   border: 1px solid #3d3d48;
