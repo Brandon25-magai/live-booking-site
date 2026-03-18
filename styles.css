@@ -320,7 +320,7 @@ label {
 
 input,
 textarea {
-  width: 100%;
+   width: 100%;
   border: 1px solid #505061;
   border-radius: 0.56rem;
   background: #0f0f13;
