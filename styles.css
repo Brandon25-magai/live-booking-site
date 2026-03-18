@@ -479,3 +479,10 @@ transform:scale(1.05);
 .offer-list li {
   margin-bottom: 4px;
 }
+.offer-kicker {
+  margin-bottom: 0.5rem;
+}
+
+.offer-list li strong {
+  color: #ffc34d;
+}
