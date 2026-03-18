@@ -439,3 +439,21 @@ textarea {
   margin-top: 0.5rem;
   min-height: 1.2rem;
 }
+
+.floating-call{
+position:fixed;
+bottom:20px;
+right:20px;
+background:linear-gradient(135deg,var(--accent),var(--accent-2));
+color:#17120c;
+font-weight:800;
+padding:14px 18px;
+border-radius:999px;
+text-decoration:none;
+z-index:999;
+box-shadow:0 10px 25px rgba(0,0,0,.35);
+}
+
+.floating-call:hover{
+transform:scale(1.05);
+}
