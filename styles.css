@@ -457,3 +457,12 @@ box-shadow:0 10px 25px rgba(0,0,0,.35);
 .floating-call:hover{
 transform:scale(1.05);
 }
+.offer-list {
+  margin: 0.5rem 0 0;
+  padding-left: 1rem;
+  color: #e4e4e7;
+}
+
+.offer-list li {
+  margin-bottom: 4px;
+}
