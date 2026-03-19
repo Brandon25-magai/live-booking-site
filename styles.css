@@ -161,7 +161,7 @@ a {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("assets/SATOS-LOGO-webvector-SVG_01.svg") center/420px no-repeat;
+  background: url("assets/SATOS-LOGO-webvector-SVG_01.svg") center/500px no-repeat;
   opacity: 0.08;
   pointer-events: none;
 }
