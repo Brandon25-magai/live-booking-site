@@ -690,7 +690,7 @@ transform:scale(1.05);
   position: absolute;
   inset: 0;
   background: url("assets/services-hero.jpg") center/cover no-repeat;
-  opacity: 0.25;
+  opacity: 0.35;
   pointer-events: none;
 }
 
