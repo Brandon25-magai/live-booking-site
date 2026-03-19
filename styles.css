@@ -264,18 +264,18 @@ h1 {
 }
 
 .section-block.alt {
-  	  background: var(--panel-alt);
+  background: var(--panel-alt);
 }
-   
-  	#service-area {
-     border: none;
-   	}
-   	
-   	.card-grid {
-   	  display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-   	  gap: 0.9rem;
-   	}
+
+#service-area {
+  border: none;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.9rem;
+}
 
 .card-grid article {
   border: 1px solid #3d3d48;
@@ -529,55 +529,11 @@ transform:scale(1.05);
 .offer-kicker {
   margin-bottom: 0.5rem;
 }
-.main-nav {
-display:flex;
-gap:1rem;
-font-weight:600;
-}
-
-.main-nav a {
-text-decoration:none;
-color:var(--text);
-}
-
-.main-nav a:hover {
-color:var(--accent);
-}
 
 .offer-list li strong {
   color: #ffc34d;
 }
 
-.logo-block {
-  display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
-}
-
-.logo-subtext {
-  font-size: 0.85rem;
-  color: var(--muted);
-  font-weight: 600;
-  letter-spacing: 0.02em;
-}
-
-.main-nav {
-  display: flex;
-  gap: 1.1rem;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.main-nav a {
-  text-decoration: none;
-  color: var(--text);
-  font-weight: 700;
-  font-size: 0.95rem;
-}
-
-.main-nav a:hover {
-  color: var(--accent);
-}
 
 #services-preview p {
   max-width: 70ch;
@@ -590,9 +546,6 @@ color:var(--accent);
     justify-content: center;
   }
 
-  .logo-block {
-    align-items: flex-start;
-  }
 }
 .services-hero h1 {
   max-width: 20ch;
@@ -677,7 +630,7 @@ color:var(--accent);
 
 .service-preview-card p {
   margin: 0;
-  .contact-hero {
+  color: var(--muted);
   position: relative;
   overflow: hidden;
 }
@@ -708,7 +661,7 @@ color:var(--accent);
   content: "";
   position: absolute;
   inset: 0;
-  background: url("assets/SATOS-LOGO-webvector-SVG_01.svg") center/420px no-repeat;
+  background: url("assets/SATOS-LOGO-webvector-SVG_01.svg") center/500px no-repeat;
   opacity: 0.07;
   pointer-events: none;
 }
