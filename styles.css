@@ -757,3 +757,19 @@ transform:scale(1.05);
 }
 }
 \
+.home-top-image {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  overflow: hidden;
+  border-bottom: 1px solid #3a2f1d;
+}
+
+.home-top-photo {
+  display: block;
+  width: 100%;
+  height: clamp(220px, 42vw, 520px);
+  object-fit: cover;
+  object-position: center;
+}
