@@ -46,7 +46,7 @@ a {
 }
 
 .container {
-  width: min(100% - 2rem, var(--max-width));
+  width: min(100%, var(--max-width));;
   margin-inline: auto;
 }
 
