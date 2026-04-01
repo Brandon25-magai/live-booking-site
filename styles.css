@@ -172,12 +172,12 @@ main {
 main::before {
   content: "";
   position: absolute;
-  top: clamp(260px, 38vw, 640px);
+  top: 360px;
   left: 0;
   width: 100%;
-  height: calc(100% - clamp(260px, 38vw, 640px));
-  background: url("assets/SATOS-LOGO-webvector-SVG_01.svg") center top / 420px no-repeat;
-  opacity: 0.05;
+  height: 100%
+  url("assets/SATOS-LOGO-webvector-SVG_01.svg") center 200px / 500px no-repeat;
+  opacity: 0.08;
   pointer-events: none;
   z-index: 0;
 }
