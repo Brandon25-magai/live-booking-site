@@ -164,28 +164,7 @@ a {
   margin: 0 auto;
 }
 
-/* Main site watermark starts AFTER the truck image and scrolls with page */
-main {
-  position: relative;
-}
-
-main::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url("assets/SATOS-LOGO-webvector-SVG_01.svg") center 700px / 420px no-repeat;
-  opacity: 0.11;
-  pointer-events: none;
-  z-index: 0;
-}
-
-main > * {
-  position: relative;
-  z-index: 1;
-}
+/* Main site watermark starts AFTER the truck image and scrolls with page */  
 
 .hero {
   position: relative;
@@ -731,12 +710,14 @@ select {
     max-height: 420px;
   }
 
-  main::before {
-    top: clamp(220px, 42vw, 460px);
-    height: calc(100% - clamp(220px, 42vw, 460px));
-    background-size: 280px;
-    opacity: 0.04;
-  }
+main::before {
+  background-position: center 140px;
+  background-size: 260px auto;
+  opacity: 0.05;
+}
+
+body.home-page main::before {
+  background-position: center 420px;
 }
 
 @media (max-width: 768px) {
@@ -785,13 +766,15 @@ select {
     max-height: 320px;
   }
 
-  main::before {
-    top: 320px;
-    height: calc(100% - 320px);
-    background-size: 220px;
-    opacity: 0.035;
-  }
+ main::before {
+  background-position: center 120px;
+  background-size: 210px auto;
+  opacity: 0.045;
+}
 
+body.home-page main::before {
+  background-position: center 320px;
+}
   .footer-grid {
     flex-direction: column;
   }
